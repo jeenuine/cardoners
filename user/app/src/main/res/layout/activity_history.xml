@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".History">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ScrollView
+            android:id="@+id/scrollView_money"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></ListView>
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
